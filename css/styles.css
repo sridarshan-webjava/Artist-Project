@@ -1,0 +1,151 @@
+/* title section */
+
+.container-fluid{
+  padding : 2.5% 10% 7%;
+}
+
+.bg-image{
+  background-image: url("movie.jpg");
+  background-size: cover;
+  /* height: 100%; */
+  /* background-size: 100% 120%; */
+  /* background-h */
+  /* background-size:contain; */
+  /* background-size: auto; */
+  background-position: center;
+  filter: blur(4px);
+}
+
+#title{
+  /* background-image:linear-gradient(to right,#202040,#202060,#004d61); */
+  color:#fff;
+  text-align: center;
+  padding-bottom: 7%;
+}
+
+.title-section{
+  /* padding:10% 0 5% 0; */
+  font-family: "Merriweather Sans";
+  font-weight: 800;
+  font-size: 3rem;
+  color:#e7f3ee;
+}
+
+.navbar-brand{
+font-family: "Titillium Web";
+font-weight:900;
+font-size:2.75rem;
+color:#e7f3ee;
+}
+
+.nav-link{
+  font-family: "Dosis";
+  font-weight: 500;
+  font-size: 1.25rem;
+  color:#fff;
+}
+
+.navbar{
+  padding-bottom:10%;
+}
+
+.nav-item{
+  padding:0 18px;
+}
+
+  /* search button */
+
+.searchBox{
+  /* text-align:center; */
+  transform: translate(-50%, 50%);
+  position:absolute;
+  top:41%;
+  left:50%;
+  background: #00204a;
+  /* height:50px; */
+/*   width:30px; */
+  border-radius:40px;
+  padding:8px 15px 5px 10px;
+}
+
+.searchBox:hover>.searchInput{
+  width:250px;
+  padding:4px 0 0 4px;
+  /* color:#fff; */
+}
+
+.searchBox:hover>.searchButton{
+  background:white;
+  color: #00204a;
+}
+
+.searchInput{
+  border-radius:20px;
+  border:none;
+  background:none;
+  outline:none;
+  float:left;
+  padding:4px 0 0 4px;
+  color:white;
+  /* border-color: #000; */
+  font-size: 16px;
+	transition: 0.4s;
+/*   line-height: 40px; */
+  width:0;
+}
+
+.searchButton{
+  border-radius:60%;
+  color:white;
+  background: #00204a;
+  float:right;
+  height:40px;
+  width:40px;
+  padding:0 2px 0 2px;
+/*   display:flex; */
+  transition: 0.4s;
+	cursor: pointer;
+  outline:none;
+/*   align-items:center; */
+/*   justify-content: center; */
+}
+
+        /* icons */
+
+.icons{
+  /* position: absolute; */
+  /* bottom:34%; */
+  /* left:10%; */
+  /* padding:0 30%; */
+  /* align-items: center;*/
+ }
+
+.icon{
+  background: none;
+  border: none;
+  /* margin:0 20% 0 20%; */
+  /* padding: */
+  /* margin:0 3%; */
+  /* padding:0 12%; */
+  /* padding:0 5%; */
+  /* margin:0 5%; */
+}
+.icon-att{
+  background-color: none;
+  color:#deecff;
+  /* padding:0 10% 0 10%; */
+}
+
+.row{
+  /* position:absolute; */
+  /* left:20%; */
+  /* bottom: 20% */
+  margin-left: 18%;
+  margin-top:20%;
+}
+
+.icon-att:hover{
+  height:58px;
+  width:64px;
+  cursor:pointer;
+}

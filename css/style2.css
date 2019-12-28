@@ -1,0 +1,185 @@
+body {
+  text-align: left;
+  margin: 0;
+  padding:0;
+  /* background-image: url("/Users/darshanbalaji/Desktop/Web Development/Project/css/2243.jpg"); */
+  background-image: url("2243.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo{
+  width:100px;
+  height:100px;
+  /* margin:   */
+}
+
+.navbar{
+  padding-top: 1.5%;
+  animation-name: movenav;
+  animation-duration:3s;
+  animation-delay:3s;
+  animation-fill-mode: backwards;
+  /* margin:0; */
+}
+
+.navbar-brand{
+  margin-left:10%;
+}
+
+.navbar-nav{
+  margin-right:40px;
+}
+
+.nav-item{
+  /* width:100%; */
+  padding : 0 18px;
+  font-size:1.25rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-item:hover{
+  background-color: rgba(228, 242, 240,0.5);
+}
+
+@keyframes movenav{
+  0%{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+
+  100%{
+    transform: translateY(0px);
+    opacity:1;
+  }
+}
+
+
+.page-heading{
+  font-family: 'Courgette', cursive;
+  font-size:62px;
+  color:#dbbf0d;
+  text-align: center;
+  margin:3% 0;
+  animation-name: movetoleft;
+  animation-duration: 3s;
+}
+
+.intro{
+  font-family: 'Roboto Slab', serif;
+  font-size:23px;
+  text-align: center;
+  width:90%;
+  margin:2% auto 5%;
+  line-height: 1.5;
+  color:#c99802;
+  animation-name: movetoright;
+  animation-duration: 3s;
+}
+
+.journey-heading{
+  font-family: 'Courgette', cursive;
+  font-size: 35px;
+  color:#dbbf0d;
+  margin-left:30%;
+  padding:20px;
+  /* margin-bottom:3%; */
+  animation-name: movetoleft;
+  animation-duration: 3s;
+}
+
+.art-journey{
+  /* width:80%; */
+  font-family: 'Roboto Slab', serif;
+  font-size:24px;
+  color:#b58800;
+  animation-name: movetoright;
+  animation-duration: 3s;
+}
+
+.outer{
+  margin:0 10% 7%;
+}
+.img1{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.img2{
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.journey {
+  width:300px;
+  height:300px;
+  float: left;
+  margin:50px 20px 20px;
+  border-radius: 60%;
+  shape-outside: circle();
+  animation-name: movefromtop;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+}
+
+.journey2{
+  width:300px;
+  height:300px;
+  float: right;
+  margin:50px 10px 20px;
+  border-radius: 60%;
+  shape-outside: circle();
+  animation-name: movefromtop;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+}
+
+.inner{
+  position:relative;
+  overflow: hidden;
+}
+
+@keyframes movetoleft{
+  0%{
+    transform:translateX(100px);
+    opacity:0;
+  }
+  100%{
+    transform:translateX(0);
+    opacity:1;
+  }
+}
+
+@keyframes movetoright{
+  0%{
+    transform:translateX(-100px);
+    opacity:0;
+  }
+  100%{
+    transform:translateX(0);
+    opacity:1;
+  }
+}
+
+@keyframes movefromtop{
+  0%{
+    transform: translateY(-100px);
+    opacity:0;
+  }
+
+  100%{
+    transform: translateY(0);
+    opacity:1;
+  }
+}

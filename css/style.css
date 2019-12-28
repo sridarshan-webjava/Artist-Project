@@ -1,0 +1,389 @@
+body{
+  margin:0;
+  text-align:center;
+}
+
+.logo{
+  width:100px;
+  height:100px;
+  /* margin:   */
+}
+.container-fluid{
+  padding:0;
+  /* padding-bottom:2px; */
+}
+
+.wrapper{
+  background-image:url("bg.svg");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  /* height:60%; */
+  /* padding-bottom:1rem; */
+  position:relative;
+}
+
+.intro{
+  font-family: 'Courgette', cursive;
+  font-size: 1000%;
+  text-align:center;
+  margin:0;
+  margin-top:10rem;
+  margin-bottom:3rem;
+  color:#512c62;
+  animation-name: movetoleft;
+  animation-duration: 3s;
+}
+
+h2{
+  font-family: 'Courgette', cursive;
+  margin:0;
+  padding-bottom:8rem;
+  /* margin-bottom:2%; */
+  font-size:800%;
+  text-align:center;
+  color:#512c62;
+  animation-name: movetoright;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+  /* visibility:  */
+}
+
+span{
+  font-size:100%;
+}
+
+.navbar{
+  padding-top: 1.5%;
+  animation-name: movenav;
+  animation-duration:3s;
+  animation-delay:3s;
+  animation-fill-mode: backwards;
+  /* margin:0; */
+}
+
+.navbar-brand{
+  margin-left:10%;
+}
+
+.navbar-nav{
+  margin-right:40px;
+}
+
+.nav-item{
+  /* width:100%; */
+  padding : 0 18px;
+  font-size:1.25rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-item:hover{
+  background-color: rgba(228, 242, 240,0.5);
+}
+
+/* .nav-link{
+  transition:2.0s;
+} */
+/* .bg{
+  background-image: linear-gradient(right,rgba(230, 248, 249,1));
+} */
+
+@keyframes movetoleft{
+  0%{
+    transform: translateX(150px);
+    opacity:0;
+  }
+
+  100%{
+    transform:translateX(0px);
+    opacity:1;
+  }
+}
+
+@keyframes movetoright{
+  0%{
+    transform: translateX(-120px);
+    opacity:0;
+  }
+
+  100%{
+    transform:translateX(0px);
+    opacity:1;
+  }
+}
+
+@keyframes movenav{
+  0%{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+
+  100%{
+    transform: translateY(0px);
+    opacity:1;
+  }
+}
+
+                      /* contact section */
+
+/* .contact-me{
+  background-color: #f8f8f8;
+}
+
+.contact{
+  font-family: 'Merriweather', serif;
+  font-size:40px;
+  color:#da9833;
+  text-align: center;
+  padding:7% 0 2% 0;
+} */
+
+/* Footer section */
+
+
+
+                                  /* My Works page */
+
+                                  /* carousel */
+
+img{
+  margin:3% 0;
+  width:600px;
+  height:600px;
+  /* padding:0 5px; */
+}
+
+.carousel-item{
+  padding:1% 15%;
+}
+
+.bg{
+  padding:5% 0 5% 0;
+  animation-name: movecarousel;
+  animation-duration: 2s;
+}
+
+.background{
+  background-color: rgba(13, 60, 82,0.45);
+}
+
+/* .carousel-control-next-icon{
+  color:#000;
+} */
+
+.intro-heading{
+  margin:2% 0 3% 0;
+  color:#1b7fbd;
+  font-family: 'Courgette', cursive;
+  font-size:68px;
+  animation-name: work-movetoleft;
+  animation-duration: 3s;
+}
+
+.work-desc{
+  color:#5588a3;
+  font-family: 'Roboto Slab', serif;
+  width:50%;
+  margin:0 auto;
+  font-size:23px;
+  animation-name: work-movetoright;
+  animation-duration: 3s;
+  /* text-align: justify; */
+}
+
+.work-desc-post{
+  color:#5588a3;
+  width:60%;
+  padding:30px 0 20px 0;
+  margin:0 auto;
+  font-family: 'Roboto Slab', serif;
+  font-size:15px;
+  animation-name: work-movetoright;
+  animation-duration: 3s;
+  /* text-align: justify; */
+}
+
+.post{
+  font-size:20px;
+}
+
+/* .nav-item-animation{
+  animation-name: movenav;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+} */
+
+@keyframes work-movetoleft{
+  0%{
+    transform:translateX(100px);
+    opacity:0;
+  }
+  100%{
+    transform:translateX(0);
+    opacity:1;
+  }
+}
+
+@keyframes work-movetoright{
+  0%{
+    transform:translateX(-100px);
+    opacity:0;
+  }
+  100%{
+    transform:translateX(0);
+    opacity:1;
+  }
+}
+
+@keyframes movecarousel{
+  0%{
+    transform: translateX(100px);
+    opacity:0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity:1;
+  }
+}
+
+                      /* contact me section */
+
+.form-intro{
+  width:90%;
+  margin:5% auto;
+  font-family: 'Roboto Slab', serif;
+  font-size:24px;
+  line-height:2;
+  color:#658525;
+  animation-name: work-movetoleft;
+  animation-duration: 3s;
+}
+
+.outer{
+  padding:20px 0;
+  margin:2% 0 2% 14%;
+  width:75%;
+  background-color: rgba(38, 66, 32,0.4);
+  animation-name:work-movetoright;
+  animation-duration:3s;
+}
+
+.form-name{
+  text-align: justify;
+  margin:2% 0 2% 13%;
+}
+
+.form-mail{
+  text-align: justify;
+  margin:0 0 2% 13%;
+}
+
+.form-Message{
+  text-align: justify;
+  margin:0 0 2% 13%;
+}
+
+.label-form{
+  padding-right:10px;
+  font-family: 'Roboto Slab', serif;
+  font-size:17.5px;
+  color:#005542;
+}
+
+.input-form{
+  border:none;
+  background-color:#c4f0c5;
+  border:1px solid #393e46;
+}
+
+textarea{
+  background-color:#c4f0c5;
+}
+
+placeholder{
+  color:#005542;
+}
+
+.button-dec{
+  padding:10px 30px;
+  margin:3% 0;
+}
+
+.contacting-intro{
+  color:#6a9c78;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  width:30%;
+  margin:5% auto 0;
+  line-height: 2;
+  padding-bottom:3%;
+  font-size:20px;
+  animation-name: work-movetoleft;
+  animation-duration: 3s;
+}
+button{
+  color:#4a772f;
+  margin-bottom:5%;
+  padding:15px 30px;
+  border:none;
+  border-radius:4.75%;
+  border: 1px solid #64a36f;
+  background-color: rgba(255,255,255,0);
+  animation-name: work-movetoright;
+  animation-duration: 3s;
+}
+
+button:hover{
+  /* font-weight: bold; */
+  color:#4a772f;
+  background-color: #cef0b9;
+}
+
+i{
+  padding-right:5px;
+}
+
+
+.footer{
+  /* background-color:#ffa0d2; */
+  background-color:rgba(186, 226, 190 ,0.5);
+  padding:70px 10px 50px;
+  animation-name: work-movetoleft;
+  animation-duration: 3s;
+}
+
+.footer-link{
+  /* color:#ff78ae; */
+  color:#79bd8f;
+  margin:10px 20px;
+  text-decoration: none;
+}
+
+.footer-link:hover{
+  text-decoration: none;
+  color:#326765;
+}
+
+.end{
+  font-size:15px;
+  padding-top:40px;
+  margin:0;
+  color:#5e8b6f;
+}
+
+/* abut me section */
+
+.journey{
+  position: relative;
+}
+
+.art-journey{
+  width:60%;
+}
+
+/* .art-yoga{
+  position:absolute;
+} */
